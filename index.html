@@ -1,0 +1,87 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nícolas Rodrigues Martins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="initial_info">
+        <header>
+            <img src="/Images/computer.gif" alt="Computador animado">
+            <h1 id="title"></h1>
+            <h2 id="subtitle"></h2>
+        </header>
+        
+        <nav>
+            <button class="link_button" id="about_button" onclick="scrollElement(2)">Sobre mim</button>
+            <button class="link_button" id="grad_button" onclick="scrollElement(3)">Formações</button>
+            <button class="link_button" id="proj_button" onclick="scrollElement(4)">Projetos</button>
+            <button class="link_button" id="contact_button" onclick="scrollElement(5)">Contato</button>
+        </nav>
+    </div>
+    <div class="about_me">
+        <p class="titles_content">
+            Um pouco sobre mim
+        </p>
+        <img src="/Images/eu.jpeg" alt="Uma foto minha" id="my_photo">
+        <p class="txt" id="about_me_txt">
+            Tenho 19 anos e desde muito novo sempre adorei computadores e ficava fascinado com isso. Tenho uma natureza analítica e sempre me perguntei
+            como as coisas são criadas e como elas funcionam. Nada mais encantador do que compreender o mundo não é? Por meio da tecnologia eu encontrei
+            uma forma de inventar e construir ideias. Ah, e eu gosto muito de natação e jogos!
+        </p>
+    </div>
+    <div class="grad">
+        <p class="titles_content">
+            Formações
+        </p>
+        <ul class="list">
+            <li>
+
+                Cursando Ciências da Computação na UNINTER
+            </li>
+            <li>
+                Inglês <br> Avançado
+            </li>
+            <li>
+                Experiência como<br>
+                Analista de Sistemas -
+                Hospital Virvi Ramos
+            </li>
+        </ul>
+    </div>
+    <div class="proj">
+        <p class="titles_content">
+            Quer conhecer alguns dos meus projetos?
+        </p>
+        <ul class="list">
+            <li>
+                Aero Alien X<br> Jogo de "navinha" feito em Javascript usando a Construct 3 Engine. Jogue ele <a href="https://aeroalienxproject.netlify.app/" target="_blank">aqui</a> . <br>
+            </li>
+        </ul>
+        <p class="txt" id="proj_txt">
+            Clique <a href="https://github.com/NicoMartins2" target="_blank">aqui</a> para acessar meu Github e ver outros projetos!
+        </p>
+    </div>
+    <div class="contacts">
+        <p class="titles_content">
+            Fale comigo abaixo!
+        </p>
+        <form>
+            <p>Digite suas informações:<br></p>
+            <input type="text" placeholder="Digite seu nome aqui" id="form_name" class="input_form"><br>
+            <input type="email" name="email" id="form_email" placeholder="seu@email.com.br" class="input_form"><br>
+            <textarea name="msg" id="form_msg" placeholder="Digite sua mensagem aqui" rows="4" cols="40"></textarea><br><br>
+            <input type="submit" value="Enviar" id="form_button" class="link_button">
+        </form>
+    </div>
+    <div class="return_top_button">
+        <button class="link_button" id="init_button" onclick="scrollElement(1)">
+            <img src="/Icons/up-arrow-svgrepo-com.png" alt="Seta para cima" id="arrow_init_button">
+        </button>
+    </div>
+    <script src="textDigit.js"></script>
+    <script src="scroll.js"></script>
+</body>
+</html>
